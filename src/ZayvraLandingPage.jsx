@@ -1,5 +1,3 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
 import { Mail, ShoppingCart } from "lucide-react";
 import { motion } from "framer-motion";
 
@@ -24,34 +22,28 @@ export default function ZayvraLandingPage() {
           Premium Amazon FBA Brand | Trusted by Thousands | Modern, Minimal & Scalable
         </motion.p>
         <div className="flex justify-center gap-4">
-          <Button className="text-lg px-6 py-3">
-            <ShoppingCart className="mr-2" /> Visit on Amazon
-          </Button>
-          <Button variant="outline" className="text-lg px-6 py-3">
-            <Mail className="mr-2" /> Contact Us
-          </Button>
+          <button className="bg-black text-white px-6 py-3 rounded-xl text-lg flex items-center gap-2 hover:opacity-90">
+            <ShoppingCart /> Visit on Amazon
+          </button>
+          <button className="border border-gray-400 px-6 py-3 rounded-xl text-lg flex items-center gap-2 hover:bg-gray-100">
+            <Mail /> Contact Us
+          </button>
         </div>
       </section>
 
       <section className="py-16 px-4 md:px-16 grid md:grid-cols-3 gap-6 bg-gray-100">
-        <Card className="rounded-2xl shadow-lg">
-          <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Modern Products</h3>
-            <p>Handpicked gadgets, beauty, fashion, and home essentials curated for quality & style.</p>
-          </CardContent>
-        </Card>
-        <Card className="rounded-2xl shadow-lg">
-          <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-2">FBA-Ready Experience</h3>
-            <p>Optimized packaging, logistics, and fast Amazon Prime delivery across multiple regions.</p>
-          </CardContent>
-        </Card>
-        <Card className="rounded-2xl shadow-lg">
-          <CardContent className="p-6">
-            <h3 className="text-xl font-semibold mb-2">Premium Brand Feel</h3>
-            <p>Every product under Zayvra is designed to elevate lifestyle — clean, sleek, and purposeful.</p>
-          </CardContent>
-        </Card>
+        <div className="bg-white p-6 rounded-2xl shadow">
+          <h3 className="text-xl font-semibold mb-2">Modern Products</h3>
+          <p>Handpicked gadgets, beauty, fashion, and home essentials curated for quality & style.</p>
+        </div>
+        <div className="bg-white p-6 rounded-2xl shadow">
+          <h3 className="text-xl font-semibold mb-2">FBA-Ready Experience</h3>
+          <p>Optimized packaging, logistics, and fast Amazon Prime delivery across multiple regions.</p>
+        </div>
+        <div className="bg-white p-6 rounded-2xl shadow">
+          <h3 className="text-xl font-semibold mb-2">Premium Brand Feel</h3>
+          <p>Every product under Zayvra is designed to elevate lifestyle — clean, sleek, and purposeful.</p>
+        </div>
       </section>
 
       <footer className="py-8 bg-white text-center border-t">
