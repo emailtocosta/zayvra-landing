@@ -1,12 +1,3 @@
-from pathlib import Path
-
-# Define the directory and file structure
-project_root = Path("/mnt/data/zayvra-landing")
-src_dir = project_root / "src" / "components"
-src_dir.mkdir(parents=True, exist_ok=True)
-
-# Define the content for the ZayvraLandingPage.jsx file
-zayvra_landing_code = """
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Mail, ShoppingCart } from "lucide-react";
@@ -69,10 +60,3 @@ export default function ZayvraLandingPage() {
     </main>
   );
 }
-"""
-
-# Write the file
-file_path = src_dir / "ZayvraLandingPage.jsx"
-file_path.write_text(zayvra_landing_code.strip())
-
-file_path.name
